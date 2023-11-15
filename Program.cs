@@ -57,6 +57,9 @@ namespace MJU23v_DTP_T1
             Console.WriteLine("Welcome! enter commnad 'help' if you need help??");
             do
             {
+                Console.Write("> ");
+                string[] command = Console.ReadLine().Split(' ');
+
 
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
