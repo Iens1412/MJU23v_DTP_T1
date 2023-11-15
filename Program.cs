@@ -114,6 +114,10 @@ namespace MJU23v_DTP_T1
                     {
                         //NYI: need to add code here
                     }
+                    else if (command.Length > 2 && command[1] == "country")
+                    {
+                        //NYI: write code here 
+                    }
                 }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
