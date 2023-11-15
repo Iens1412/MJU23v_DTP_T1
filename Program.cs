@@ -141,6 +141,15 @@ namespace MJU23v_DTP_T1
                     Console.WriteLine("Help                                 to see the command list");
                     Console.WriteLine("quit                                 to exit the program");
                 }
+                else if (command[0] == "quit")
+                {
+                    Console.WriteLine("Good Bye!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong command");
+                }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
