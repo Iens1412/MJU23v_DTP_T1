@@ -99,29 +99,7 @@ namespace MJU23v_DTP_T1
                 }
                 else if (command[0] == "show")
                 {
-                    if (command.Length == 2)
-                    {
-                        string language = command[1];
-
-                        foreach (Language L in eulangs)
-                        {
-                            int index = L.language.IndexOf(language);
-                            if (index != -1)
-                            { L.Print(); }
-                        }
-                    }
-                    else if (command.Length > 2 && command[1] == "group")
-                    {
-                        //NYI: need to add code here
-                    }
-                    else if (command.Length > 2 && command[1] == "country")
-                    {
-                        //NYI: write code here 
-                    }
-                    else if (command.Length > 4 && command[1] == "between" && command[3] == "and")
-                    {
-                        //NYI: write code here
-                    }
+                    Show(command);
                 }
                 else if (command[0] == "population" && command[1] == "group")
                 {
@@ -155,6 +133,33 @@ namespace MJU23v_DTP_T1
                 Console.WriteLine("population group /groupname/         to show the population in the group of countries");
                 Console.WriteLine("Help                                 to see the command list");
                 Console.WriteLine("quit                                 to exit the program");
+            }
+
+            static void Show(string[] command)
+            {
+                if (command.Length == 2)
+                {
+                    string language = command[1];
+
+                    foreach (Language L in eulangs)
+                    {
+                        int index = L.language.IndexOf(language);
+                        if (index != -1)
+                        { L.Print(); }
+                    }
+                }
+                else if (command.Length > 2 && command[1] == "group")
+                {
+                    //NYI: need to add code here
+                }
+                else if (command.Length > 2 && command[1] == "country")
+                {
+                    //NYI: write code here 
+                }
+                else if (command.Length > 4 && command[1] == "between" && command[3] == "and")
+                {
+                    //NYI: write code here
+                }
             }
         }
     }
