@@ -2,6 +2,14 @@
 
 namespace MJU23v_DTP_T1
 {
+    /*
+     * 1. get new array strings for the command
+     * 2. get do while loop
+     * 3. get if-else sats for every command 
+     * 4. delete the old code a keep the new one
+     * 5. refactor if needed
+     */
+
     public class Language
     {
         public string family, group;
