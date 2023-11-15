@@ -53,7 +53,13 @@ namespace MJU23v_DTP_T1
                     line = sr.ReadLine();
                 }
             }
-            Console.WriteLine("==== Languages in Spain ====");
+
+            Console.WriteLine("Welcome! enter commnad 'help' if you need help??");
+            do
+            {
+
+            } while (true);
+                Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
             {
                 int index = L.area.IndexOf("Spain");
