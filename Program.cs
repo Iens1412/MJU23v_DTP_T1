@@ -97,6 +97,20 @@ namespace MJU23v_DTP_T1
                         }
                     }
                 }
+                else if (command[0] == "show")
+                {
+                    if (command.Length == 2)
+                    {
+                        string language = command[1];
+
+                        foreach (Language L in eulangs)
+                        {
+                            int index = L.language.IndexOf(language);
+                            if (index != -1)
+                            { L.Print(); }
+                        }
+                    }
+                }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
