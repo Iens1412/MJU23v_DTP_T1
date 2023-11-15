@@ -123,6 +123,10 @@ namespace MJU23v_DTP_T1
                         //NYI: write code here
                     }
                 }
+                else if (command[0] == "population" && command[1] == "group")
+                {
+                    //NYI: write code here
+                }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
