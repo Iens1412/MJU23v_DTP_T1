@@ -127,6 +127,20 @@ namespace MJU23v_DTP_T1
                 {
                     //NYI: write code here
                 }
+                else if (command[0] == "help")
+                {
+                    Console.WriteLine("Here are a list of the commnads you can use\n");
+                    Console.WriteLine("list group /group name/              to list the languages of the gruop");
+                    Console.WriteLine("list country /countryname/           to list the languages of the country");
+                    Console.WriteLine("list between /lownum/ and /hinum/    to list the languages between the country that have a population between the lownumber and the highnumber");
+                    Console.WriteLine("show /language/                      to show the informations about the language");
+                    Console.WriteLine("show group /group name/              to show the informations about the group of the countries");
+                    Console.WriteLine("show country /countryname/           to show the informtaions about the country");
+                    Console.WriteLine("show between /lownum/ and /hinum/    to show informations about countrys tha has a population between lownum and hinum");
+                    Console.WriteLine("population group /groupname/         to show the population in the group of countries");
+                    Console.WriteLine("Help                                 to see the command list");
+                    Console.WriteLine("quit                                 to exit the program");
+                }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
