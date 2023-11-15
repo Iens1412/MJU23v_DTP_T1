@@ -60,7 +60,19 @@ namespace MJU23v_DTP_T1
                 Console.Write("> ");
                 string[] command = Console.ReadLine().Split(' ');
 
+                if (command[0] == "list" && command[1] == "group")
+                {
+                    string groupName = string.Join(" ", command.Skip(2));
 
+                    foreach (Language L in eulangs)
+                    {
+                        int index = L.group.IndexOf(groupName);
+                        if (index != -1)
+                        {
+                            Console.WriteLine(L.language);
+                        }
+                    }
+                }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
