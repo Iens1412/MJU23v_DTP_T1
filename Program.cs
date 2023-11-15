@@ -110,6 +110,10 @@ namespace MJU23v_DTP_T1
                             { L.Print(); }
                         }
                     }
+                    else if (command.Length > 2 && command[1] == "group")
+                    {
+                        //NYI: need to add code here
+                    }
                 }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
