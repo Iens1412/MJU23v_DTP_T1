@@ -73,6 +73,16 @@ namespace MJU23v_DTP_T1
                         }
                     }
                 }
+                else if (command[0] == "list" && command[1] == "country")
+                {
+                    string countryname = command[2];
+                    foreach (Language L in eulangs)
+                    {
+                        int index = L.area.IndexOf(countryname);
+                        if (index != -1)
+                            Console.WriteLine(L.language);
+                    }
+                }
             } while (true);
                 Console.WriteLine("==== Languages in Spain ====");
             foreach (Language L in eulangs)
